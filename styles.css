@@ -317,6 +317,14 @@ a {
     animation: fadeInUp 1s ease-out 0.2s backwards;
 }
 
+.hero-description {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 540px;
+    animation: fadeInUp 1s ease-out 0.4s backwards;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
