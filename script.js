@@ -65,27 +65,13 @@ function initDownloadButtons() {
 
     downloadButtons.forEach(button => {
         button.addEventListener('click', (e) => {
-            e.preventDefault();
+            // Let the native href link work instead of preventing it
 
             // Add a click animation
             button.style.transform = 'scale(0.95)';
             setTimeout(() => {
                 button.style.transform = '';
             }, 150);
-
-            // Get the button type
-            const isAppStore = button.classList.contains('app-store');
-            const storeName = isAppStore ? 'App Store' : 'Google Play';
-
-            // Show alert (you can replace this with actual download logic)
-            console.log(`Redirecting to ${storeName}...`);
-
-            // TODO: Replace with actual app store links
-            // if (isAppStore) {
-            //     window.location.href = 'YOUR_APP_STORE_LINK';
-            // } else {
-            //     window.location.href = 'YOUR_GOOGLE_PLAY_LINK';
-            // }
         });
 
         // Add 3D tilt effect on mouse move
